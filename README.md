@@ -6,7 +6,8 @@ Process:
   # In views.py
   ```
   from django.views.decorators.csrf import csrf_exempt 
-  @csrf_exempt(I am ignoring the csrf token)
+  I am ignoring the csrf token
+  @csrf_exempt
   def trans(request):
     translator = Translator()
     text = request.POST['text']
